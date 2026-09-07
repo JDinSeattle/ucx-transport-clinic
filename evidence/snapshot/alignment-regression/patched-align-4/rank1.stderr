@@ -1,0 +1,113 @@
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:283:52: runtime error: member access within misaligned address 0x58bc92e42001 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x58bc92e42001: note: pointer points here
+ c9 70 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 95 61 0b b5 c9 70 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:283:52 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40: runtime error: member access within misaligned address 0x58bc92e42421 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x58bc92e42421: note: pointer points here
+ bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40: runtime error: load of misaligned address 0x58bc92e42421 for type 'const ucp_proto_t *const' (aka 'const struct ucp_proto *const'), which requires 8 byte alignment
+0x58bc92e42421: note: pointer points here
+ bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40: runtime error: member access within misaligned address 0x58bc92e42421 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x58bc92e42421: note: pointer points here
+ bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40: runtime error: load of misaligned address 0x58bc92e42429 for type 'const void *const', which requires 8 byte alignment
+0x58bc92e42429: note: pointer points here
+ c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00 bc 58 00  00 d0 f2 e3 92
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:894:41: runtime error: member access within misaligned address 0x58bc92e42421 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x58bc92e42421: note: pointer points here
+ bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:894:41 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27: runtime error: member access within misaligned address 0x58bc92e42421 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x58bc92e42421: note: pointer points here
+ bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27: runtime error: load of misaligned address 0x58bc92e42431 for type 'const ucp_worker_cfg_index_t' (aka 'const unsigned short'), which requires 8 byte alignment
+0x58bc92e42431: note: pointer points here
+ bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00 bc 58 00  00 d0 f2 e3 92 bc 58 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19: runtime error: member access within misaligned address 0x58bc92e42421 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x58bc92e42421: note: pointer points here
+ bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19: runtime error: load of misaligned address 0x58bc92e42421 for type 'const ucp_proto_t *const' (aka 'const struct ucp_proto *const'), which requires 8 byte alignment
+0x58bc92e42421: note: pointer points here
+ bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27: runtime error: member access within misaligned address 0x58bc92e42001 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x58bc92e42001: note: pointer points here
+ c9 70 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 95 61 0b b5 c9 70 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27: runtime error: load of misaligned address 0x58bc92e42419 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x58bc92e42419: note: pointer points here
+ 00 00 00  00 00 00 e2 92 bc 58 00  00 88 75 2a b5 c9 70 00  00 c0 92 e3 92 bc 58 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:647:52: runtime error: member access within misaligned address 0x58bc92e4559f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x58bc92e4559f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 a0  22 3a b5 c9 70 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:647:52 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28: runtime error: member access within misaligned address 0x58bc92e4559f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x58bc92e4559f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 a0  22 3a b5 c9 70 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28: runtime error: load of misaligned address 0x58bc92e459b7 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x58bc92e459b7: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 d0  e5 2c b5 c9 70 00 00 61  1b e4 92 bc 58 00 00 00  00 ff ff
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28 
+#
+# UCP endpoint 
+#
+#               peer: <no debug data>
+#                 lane[0]:  1:tcp/lo.0 md[1]                -> md[1]/tcp/sysdev[255] seg 4294967295 am keepalive wireup
+#
+# +--------------+--------------------------------------------+--------+
+# | ucp_context_0 intra-node cfg#0                                     |
+# | tagged message by ucp_tag_send*(fast-completion) from host memory  |
+# +--------------+--------------------------------------------+--------+
+# |    Range     |                Description                 | Config |
+# +--------------+--------------------------------------------+--------+
+# |      0..8184 | eager short                                | tcp/lo |
+# | 8185..262143 | multi-frag eager copy-in copy-out          | tcp/lo |
+# |    256K..inf | (?) rendezvous fragmented copy-in copy-out | tcp/lo |
+# +--------------+--------------------------------------------+--------+
+# +-----------+--------------------------------------------+--------+
+# | ucp_context_0 intra-node cfg#0                                  |
+# | tagged message by ucp_tag_send*(multi) from host memory         |
+# +-----------+--------------------------------------------+--------+
+# |   Range   |                Description                 | Config |
+# +-----------+--------------------------------------------+--------+
+# |    0..626 | eager short                                | tcp/lo |
+# | 627..1862 | multi-frag eager copy-in copy-out          | tcp/lo |
+# | 1863..inf | (?) rendezvous fragmented copy-in copy-out | tcp/lo |
+# +-----------+--------------------------------------------+--------+
+# +---------------+--------------------------------------------+--------+
+# | ucp_context_0 intra-node cfg#0                                      |
+# | tagged message by ucp_tag_send* from host memory                    |
+# +---------------+--------------------------------------------+--------+
+# |     Range     |                Description                 | Config |
+# +---------------+--------------------------------------------+--------+
+# |             0 | eager short                                | tcp/lo |
+# |      1..16483 | eager zero-copy copy-out                   | tcp/lo |
+# | 16484..273826 | multi-frag eager copy-in copy-out          | tcp/lo |
+# |   273827..inf | (?) rendezvous fragmented copy-in copy-out | tcp/lo |
+# +---------------+--------------------------------------------+--------+
+{"event":"controlled_peer_exit","rank":1,"time_ns":35634162311081,"status":"Success"}

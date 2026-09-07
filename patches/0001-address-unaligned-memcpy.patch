@@ -1,0 +1,115 @@
+--- a/src/ucp/wireup/address.c
++++ b/src/ucp/wireup/address.c
+@@ -1155,7 +1155,8 @@
+ 
+ uint64_t ucp_address_get_uuid(const void *address)
+ {
+-    uint64_t *uuid;
++    const void *uuid;
++    uint64_t value;
+     ucp_object_version_t address_version;
+     unsigned dst_version;
+     uint8_t flags;
+@@ -1163,13 +1164,18 @@
+     uuid = ucp_address_unpack_header(address, &address_version, &flags,
+                                      &dst_version);
+ 
+-    return (flags & UCP_ADDRESS_HEADER_FLAG_WORKER_UUID) ?
+-           *uuid : UCP_ADDRESS_DEFAULT_WORKER_UUID;
++    if (!(flags & UCP_ADDRESS_HEADER_FLAG_WORKER_UUID)) {
++        return UCP_ADDRESS_DEFAULT_WORKER_UUID;
++    }
++
++    memcpy(&value, uuid, sizeof(value));
++    return value;
+ }
+ 
+ uint64_t ucp_address_get_client_id(const void *address)
+ {
+     const void *offset;
++    uint64_t value;
+     ucp_object_version_t address_version;
+     unsigned dst_version;
+     uint8_t flags;
+@@ -1184,7 +1190,8 @@
+         offset = UCS_PTR_TYPE_OFFSET(offset, uint64_t);
+     }
+ 
+-    return *ucs_serialize_next(&offset, uint64_t);
++    memcpy(&value, offset, sizeof(value));
++    return value;
+ }
+ 
+ uint8_t ucp_address_is_am_only(const void *address)
+@@ -1238,13 +1245,13 @@
+     }
+ 
+     if (pack_flags & UCP_ADDRESS_PACK_FLAG_WORKER_UUID) {
+-        *(uint64_t*)ptr = worker->uuid;
++        memcpy(ptr, &worker->uuid, sizeof(worker->uuid));
+         ptr             = UCS_PTR_TYPE_OFFSET(ptr, uint64_t);
+         addr_flags     |= UCP_ADDRESS_HEADER_FLAG_WORKER_UUID;
+     }
+ 
+     if (pack_flags & UCP_ADDRESS_PACK_FLAG_CLIENT_ID) {
+-        *(uint64_t*)ptr = worker->client_id;
++        memcpy(ptr, &worker->client_id, sizeof(worker->client_id));
+         ptr             = UCS_PTR_TYPE_OFFSET(ptr, uint64_t);
+         addr_flags     |= UCP_ADDRESS_HEADER_FLAG_CLIENT_ID;
+     }
+@@ -1333,7 +1340,8 @@
+             }
+ 
+             /* Transport name checksum */
+-            *(uint16_t*)ptr = context->tl_rscs[rsc_index].tl_name_csum;
++            memcpy(ptr, &context->tl_rscs[rsc_index].tl_name_csum,
++                   sizeof(context->tl_rscs[rsc_index].tl_name_csum));
+             ptr = UCS_PTR_TYPE_OFFSET(ptr,
+                                       context->tl_rscs[rsc_index].tl_name_csum);
+ 
+@@ -1789,7 +1797,7 @@
+             }
+ 
+             /* tl_name_csum */
+-            address->tl_name_csum = *(uint16_t*)ptr;
++            memcpy(&address->tl_name_csum, ptr, sizeof(address->tl_name_csum));
+             ptr = UCS_PTR_TYPE_OFFSET(ptr, address->tl_name_csum);
+ 
+             address->dev_addr      = (dev_addr_len > 0) ? dev_addr : NULL;
+--- a/src/uct/sm/self/self.c
++++ b/src/uct/sm/self/self.c
+@@ -137,7 +137,7 @@
+ {
+     const uct_self_iface_t *iface = ucs_derived_of(tl_iface, uct_self_iface_t);
+ 
+-    *(uct_self_iface_addr_t*)addr = iface->id;
++    memcpy(addr, &iface->id, sizeof(iface->id));
+     return UCS_OK;
+ }
+ 
+@@ -146,20 +146,22 @@
+                                const uct_iface_is_reachable_params_t *params)
+ {
+     const uct_self_iface_t *iface = ucs_derived_of(tl_iface, uct_self_iface_t);
+-    const uct_self_iface_addr_t *addr;
++    const void *addr;
++    uct_self_iface_addr_t id;
+ 
+     if (!uct_iface_is_reachable_params_valid(
+                 params, UCT_IFACE_IS_REACHABLE_FIELD_IFACE_ADDR)) {
+         return 0;
+     }
+ 
+-    addr = (const uct_self_iface_addr_t*)params->iface_addr;
++    addr = params->iface_addr;
+     if (addr == NULL) {
+         uct_iface_fill_info_str_buf(params, "iface address is empty");
+         return 0;
+     }
+ 
+-    if (iface->id != *addr) {
++    memcpy(&id, addr, sizeof(id));
++    if (iface->id != id) {
+         uct_iface_fill_info_str_buf(params, "iface mismatch");
+         return 0;
+     }

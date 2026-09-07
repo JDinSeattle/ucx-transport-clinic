@@ -1,0 +1,196 @@
+INFO: UCP_HELLO_WORLD mode = 0 server = 127.0.0.1 port = 58191, pid = 4013159
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:283:52: runtime error: member access within misaligned address 0x589d1cea88c1 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x589d1cea88c1: note: pointer points here
+ 5e 77 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 95 21 11 82 5e 77 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:283:52 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40: runtime error: member access within misaligned address 0x589d1cea8ce1 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x589d1cea8ce1: note: pointer points here
+ 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40: runtime error: load of misaligned address 0x589d1cea8ce1 for type 'const ucp_proto_t *const' (aka 'const struct ucp_proto *const'), which requires 8 byte alignment
+0x589d1cea8ce1: note: pointer points here
+ 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:891:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40: runtime error: member access within misaligned address 0x589d1cea8ce1 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x589d1cea8ce1: note: pointer points here
+ 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40: runtime error: load of misaligned address 0x589d1cea8ce9 for type 'const void *const', which requires 8 byte alignment
+0x589d1cea8ce9: note: pointer points here
+ 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00 9d 58 00  00 d0 32 ea 1c
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:892:40 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:894:41: runtime error: member access within misaligned address 0x589d1cea8ce1 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x589d1cea8ce1: note: pointer points here
+ 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:894:41 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27: runtime error: member access within misaligned address 0x589d1cea8ce1 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x589d1cea8ce1: note: pointer points here
+ 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27: runtime error: load of misaligned address 0x589d1cea8cf1 for type 'const ucp_worker_cfg_index_t' (aka 'const unsigned short'), which requires 8 byte alignment
+0x589d1cea8cf1: note: pointer points here
+ 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00 9d 58 00  00 d0 32 ea 1c 9d 58 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:895:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19: runtime error: member access within misaligned address 0x589d1cea8ce1 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x589d1cea8ce1: note: pointer points here
+ 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19: runtime error: load of misaligned address 0x589d1cea8ce1 for type 'const ucp_proto_t *const' (aka 'const struct ucp_proto *const'), which requires 8 byte alignment
+0x589d1cea8ce1: note: pointer points here
+ 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/proto/proto_select.c:900:19 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27: runtime error: member access within misaligned address 0x589d1cea88c1 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x589d1cea88c1: note: pointer points here
+ 5e 77 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 95 21 11 82 5e 77 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27: runtime error: load of misaligned address 0x589d1cea8cd9 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x589d1cea8cd9: note: pointer points here
+ 00 00 00  00 00 00 e8 1c 9d 58 00  00 88 35 30 82 5e 77 00  00 a0 4a ea 1c 9d 58 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/rndv_rtr.c:286:27 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:647:52: runtime error: member access within misaligned address 0x589d1ceacb6f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x589d1ceacb6f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 5d  01 ea 1c 9d 58 00 00 d4  01 ea 1c
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:647:52 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28: runtime error: member access within misaligned address 0x589d1ceacb6f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x589d1ceacb6f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 5d  01 ea 1c 9d 58 00 00 d4  01 ea 1c
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28: runtime error: load of misaligned address 0x589d1ceacf87 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x589d1ceacf87: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 d0  a5 32 82 5e 77 00 00 21  84 ea 1c 9d 58 00 00 00  00 ff ff
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucp/rndv/proto_rndv.c:652:28 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:254:12: runtime error: member access within misaligned address 0x589d1cecb394 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cecb394: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:254:12 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:254:12: runtime error: store to misaligned address 0x589d1cecb39c for type 'void *', which requires 8 byte alignment
+0x589d1cecb39c: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:254:12 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:255:12: runtime error: member access within misaligned address 0x589d1cecb394 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cecb394: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 b3 ec 1c  9d 58 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:255:12 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:255:12: runtime error: store to misaligned address 0x589d1cecb3a4 for type 'unsigned int', which requires 8 byte alignment
+0x589d1cecb3a4: note: pointer points here
+  9d 58 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  51 3c 01 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:255:12 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:262:28: runtime error: member access within misaligned address 0x589d1cecb394 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cecb394: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 b3 ec 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:262:28 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:262:28: runtime error: load of misaligned address 0x589d1cecb3a4 for type 'unsigned int', which requires 8 byte alignment
+0x589d1cecb3a4: note: pointer points here
+  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  51 3c 01 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:262:28 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:263:46: runtime error: member access within misaligned address 0x589d1cecb394 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cecb394: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 b3 ec 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:263:46 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:263:46: runtime error: load of misaligned address 0x589d1cecb39c for type 'void *', which requires 8 byte alignment
+0x589d1cecb39c: note: pointer points here
+  00 00 00 00 b8 b3 ec 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:263:46 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:270:12: runtime error: member access within misaligned address 0x589d1cecb394 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cecb394: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 b3 ec 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:270:12 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:270:12: runtime error: store to misaligned address 0x589d1cecb394 for type 'ucs_mpool_chunk_t *' (aka 'struct ucs_mpool_chunk *'), which requires 8 byte alignment
+0x589d1cecb394: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 b3 ec 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:270:12 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:296:29: runtime error: member access within misaligned address 0x589d1cecb394 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cecb394: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 b3 ec 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:296:29 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:296:29: runtime error: load of misaligned address 0x589d1cecb3a4 for type 'unsigned int', which requires 8 byte alignment
+0x589d1cecb3a4: note: pointer points here
+  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:296:29 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/uct/tcp/tcp_cm.c:704:16: runtime error: load of misaligned address 0x775e800c2205 for type 'uct_tcp_cm_conn_event_t' (aka 'enum uct_tcp_cm_conn_event'), which requires 4 byte alignment
+0x775e800c2205: note: pointer points here
+ 04 00 00 00 02 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/uct/tcp/tcp_cm.c:704:16 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/sys/sock.c:937:26: runtime error: member access within misaligned address 0x775e800c2212 for type 'struct sockaddr_in', which requires 4 byte alignment
+0x775e800c2212: note: pointer points here
+ 00 00  00 00 02 00 a8 cf 7f 00  00 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/sys/sock.c:937:26 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/sys/sock.c:940:17: runtime error: member access within misaligned address 0x775e800c2212 for type 'struct sockaddr_in', which requires 4 byte alignment
+0x775e800c2212: note: pointer points here
+ 00 00  00 00 02 00 a8 cf 7f 00  00 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/sys/sock.c:940:17 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/uct/tcp/tcp_cm.c:242:9: runtime error: store to misaligned address 0x7ffd0a7fe575 for type 'uct_tcp_cm_conn_event_t' (aka 'enum uct_tcp_cm_conn_event'), which requires 4 byte alignment
+0x7ffd0a7fe575: note: pointer points here
+ 04 00 00 00 aa aa aa  f2 21 80 81 5e 77 00 00  a0 e5 7f 0a fd 7f 00 00  00 aa aa aa 01 00 00 00  f2
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/uct/tcp/tcp_cm.c:242:9 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:30:28: runtime error: member access within misaligned address 0x589d1cee5714 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cee5714: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 38 57 ee 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:30:28 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:30:28: runtime error: load of misaligned address 0x589d1cee5724 for type 'unsigned int', which requires 8 byte alignment
+0x589d1cee5724: note: pointer points here
+  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:30:28 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:31:47: runtime error: member access within misaligned address 0x589d1cee5714 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cee5714: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 38 57 ee 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:31:47 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:31:47: runtime error: load of misaligned address 0x589d1cee571c for type 'void *', which requires 8 byte alignment
+0x589d1cee571c: note: pointer points here
+  00 00 00 00 38 57 ee 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:31:47 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:162:66: runtime error: member access within misaligned address 0x589d1cee5714 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cee5714: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 38 57 ee 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:162:66 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:162:66: runtime error: load of misaligned address 0x589d1cee5714 for type 'ucs_mpool_chunk_t *' (aka 'struct ucs_mpool_chunk *'), which requires 8 byte alignment
+0x589d1cee5714: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 38 57 ee 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:162:66 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:176:29: runtime error: member access within misaligned address 0x589d1cee5714 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x589d1cee5714: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 38 57 ee 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:176:29 
+/tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:176:29: runtime error: load of misaligned address 0x589d1cee5714 for type 'ucs_mpool_chunk_t *' (aka 'struct ucs_mpool_chunk *'), which requires 8 byte alignment
+0x589d1cee5714: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 38 57 ee 1c  9d 58 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/patched-align-src/src/ucs/datastruct/mpool.c:176:29 

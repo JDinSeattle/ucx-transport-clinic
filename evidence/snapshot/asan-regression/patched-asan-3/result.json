@@ -1,0 +1,83 @@
+{
+  "pass": true,
+  "timed_out": false,
+  "commands": [
+    [
+      "/tmp/ucx-clinic-38becbb6c7/patched-asan/clinic-bin/clinic",
+      "0",
+      "3",
+      "1024",
+      "20",
+      "5",
+      "3",
+      "500",
+      "cancel"
+    ],
+    [
+      "/tmp/ucx-clinic-38becbb6c7/patched-asan/clinic-bin/clinic",
+      "1",
+      "4",
+      "1024",
+      "20",
+      "5",
+      "3",
+      "500",
+      "cancel"
+    ]
+  ],
+  "variants": [
+    "patched-asan",
+    "patched-asan"
+  ],
+  "mode": "cancel",
+  "size": 1024,
+  "fragment": 3,
+  "rendezvous_threshold": null,
+  "cpu_affinity": null,
+  "env": {
+    "PATH": "<HOME>/.codex/packages/standalone/releases/0.153.4-x86_64-unknown-linux-musl/codex-path:<HOME>/.local/bin:<HOME>/.codex/tmp/arg0/codex-arg0FwS4gN:<HOME>/.codex/packages/standalone/releases/0.153.4-x86_64-unknown-linux-musl/codex-path:<HOME>/.local/share/mise/installs/buf/latest/buf/bin:<HOME>/.local/share/mise/installs/delta/latest/delta-0.19.2-x86_64-unknown-linux-musl:<HOME>/.local/share/mise/installs/go/1.26.8/bin:<HOME>/.local/share/mise/installs/golangci-lint/latest/golangci-lint-2.13.2-linux-amd64:<HOME>/.local/share/mise/installs/grpcurl/latest:<HOME>/.local/share/mise/installs/java/temurin-21/bin:<HOME>/.local/share/mise/installs/just/latest:<HOME>/.local/share/mise/installs/lazygit/latest:<HOME>/.local/share/mise/installs/maven/3.9/apache-maven-3.9.16/bin:<HOME>/.local/share/mise/installs/neovim/latest/bin:<HOME>/.local/share/mise/installs/node/24/bin:<HOME>/.local/share/mise/installs/npm-pnpm/latest/node_modules/.bin:<HOME>/.local/share/mise/installs/watchexec/latest/.mise-bins:<HOME>/.local/share/mise/installs/yq/latest:<HOME>/.local/share/mise/installs/protoc/latest/bin:<HOME>/.local/share/mise/installs/kubectl/latest:<HOME>/.local/share/mise/installs/helm/latest/linux-amd64:<HOME>/.local/share/mise/installs/kind/latest:<HOME>/.local/share/mise/installs/k9s/latest:<HOME>/.local/share/mise/installs/opentofu/latest:<HOME>/.local/share/mise/installs/actionlint/latest:<HOME>/.local/share/mise/installs/hadolint/latest:<HOME>/.local/share/mise/installs/trivy/latest:<HOME>/.local/share/mise/installs/k6/latest/k6-v2.2.0-linux-amd64:<HOME>/.local/share/mise/installs/bazelisk/latest:<HOME>/.local/share/mise/installs/chezmoi/latest:<HOME>/.local/share/mise/shims:/usr/local/cuda-13.2/bin:<HOME>/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:<HOME>/.local/share/JetBrains/Toolbox/scripts",
+    "LD_LIBRARY_PATH": "/tmp/ucx-clinic-38becbb6c7/patched-asan-install/lib",
+    "UCX_TLS": "tcp,self",
+    "UCX_NET_DEVICES": "lo",
+    "UCX_LOG_LEVEL": "warn",
+    "UBSAN_OPTIONS": "halt_on_error=0:print_stacktrace=0",
+    "ASAN_OPTIONS": "detect_leaks=1:halt_on_error=1"
+  },
+  "returncodes": [
+    0,
+    0
+  ],
+  "elapsed_s": 0.4661057100020116,
+  "lifetimes": [
+    {
+      "result": "pass",
+      "rank": 0,
+      "allocated": 1,
+      "completed": 1,
+      "freed": 1,
+      "cancelled": 1
+    },
+    {
+      "result": "pass",
+      "rank": 1,
+      "allocated": 1,
+      "completed": 1,
+      "freed": 1,
+      "cancelled": 1
+    }
+  ],
+  "scope_alignment_reports": [],
+  "other_sanitizer_reports": [],
+  "roundtrip_ns": {
+    "n": 0,
+    "p50": null,
+    "p95": null,
+    "p99": null
+  },
+  "raw_sha256": {
+    "rank1.stdout": "ff3f012cf3483fbe1f88d93c0a939a17e5bf9f9ceb454c693b499d8d5be87ff8",
+    "rank0.stdout": "d78b24612be455e2a9e0baf66bf8763d6d7ed6dfc09957a7fa3c9de4c214b51b",
+    "rank0.stderr": "7b94e79ebbce3dafee24151f6c7606de304f42471afe52d45723ac3d4715b202",
+    "rank1.stderr": "7753c23c5bacccdc8a4717a71e47557b29bae9bfa51a4fab4d837bd8c45f250c"
+  }
+}

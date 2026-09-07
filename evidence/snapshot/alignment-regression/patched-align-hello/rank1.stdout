@@ -1,0 +1,13 @@
+[0x81428340] local address length: 77
+[0x81428340] send handler called for "UCX address message" with status 0 (Success)
+finish to send UCX address message
+[0x81428340] receive handler called with status 0 (Success), length 24
+finish to receive UCX data message
+
+
+----- UCP TEST SUCCESS ----
+
+ABCDEFGHIJKLMNO
+
+---------------------------
+

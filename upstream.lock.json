@@ -1,0 +1,6 @@
+{
+  "ucx": {
+    "repository": "https://github.com/openucx/ucx",
+    "revision": "bade18369e5245db37babf05ffbd88b1f5321a25"
+  }
+}

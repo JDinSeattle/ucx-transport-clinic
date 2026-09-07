@@ -1,0 +1,14 @@
+INFO: UCP_HELLO_WORLD mode = 0 server = (null) port = 51701, pid = 4020124
+
+=================================================================
+==4020124==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 77 byte(s) in 1 object(s) allocated from:
+    #0 0x58ed78ed8f28 in malloc (/tmp/ucx-clinic-38becbb6c7/patched-asan/clinic-bin/hello+0xd4f28) (BuildId: 474210edcf5194441282e36a30889a5556e25a09)
+    #1 0x58ed78f1e82e in run_ucx_server /tmp/ucx-clinic-38becbb6c7/patched-asan-src/examples/ucp_hello_world.c:432:21
+    #2 0x58ed78f1e82e in main /tmp/ucx-clinic-38becbb6c7/patched-asan-src/examples/ucp_hello_world.c:641:15
+    #3 0x785cc1e2a600 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:59:16
+    #4 0x785cc1e2a717 in __libc_start_main csu/../csu/libc-start.c:360:3
+    #5 0x58ed78e33984 in _start (/tmp/ucx-clinic-38becbb6c7/patched-asan/clinic-bin/hello+0x2f984) (BuildId: 474210edcf5194441282e36a30889a5556e25a09)
+
+SUMMARY: AddressSanitizer: 77 byte(s) leaked in 1 allocation(s).

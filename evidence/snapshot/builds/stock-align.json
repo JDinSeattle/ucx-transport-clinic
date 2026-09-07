@@ -1,0 +1,27 @@
+{
+  "revision": "bade18369e5245db37babf05ffbd88b1f5321a25",
+  "variant": "stock-align",
+  "prefix": "/tmp/ucx-clinic-38becbb6c7/stock-align-install",
+  "bin_dir": "/tmp/ucx-clinic-38becbb6c7/stock-align/clinic-bin",
+  "configure": [
+    "/tmp/ucx-clinic-38becbb6c7/stock-align-src/configure",
+    "CC=clang",
+    "CXX=clang++",
+    "CFLAGS=-g -O2 -fsanitize=alignment -Wno-error=default-const-init-var-unsafe",
+    "CXXFLAGS=-g -O2 -fsanitize=alignment -Wno-error=default-const-init-var-unsafe",
+    "LDFLAGS=-fsanitize=alignment",
+    "--prefix=/tmp/ucx-clinic-38becbb6c7/stock-align-install",
+    "--without-cuda",
+    "--without-rocm",
+    "--without-ze",
+    "--without-verbs",
+    "--without-knem",
+    "--without-xpmem",
+    "--disable-cma",
+    "--without-gdrcopy",
+    "--without-java",
+    "--without-go",
+    "--disable-numa"
+  ],
+  "compiler": "Ubuntu clang version 21.1.8 (6ubuntu1)"
+}

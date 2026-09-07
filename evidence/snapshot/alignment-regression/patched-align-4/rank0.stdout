@@ -1,0 +1,3 @@
+[1788751277.941205] [<HOST>:4013670:0]            sock.c:357  UCX  ERROR connect(fd=11, dest_addr=127.0.0.1:53247) failed: Connection refused
+[1788751277.941248] [<HOST>:4013670:0]          tcp_ep.c:1240 UCX  ERROR try to increase "net.core.somaxconn", "net.core.netdev_max_backlog", "net.ipv4.tcp_max_syn_backlog" to the maximum value on the remote node or increase UCX_TCP_MAX_CONN_RETRIES (=25)
+{"result":"pass","rank":0,"allocated":1,"completed":1,"freed":1,"cancelled":1}

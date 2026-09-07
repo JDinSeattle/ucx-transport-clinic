@@ -1,0 +1,10 @@
+--- a/examples/ucp_hello_world.c
++++ b/examples/ucp_hello_world.c
+@@ -453,6 +453,7 @@
+     ep_params.user_data       = &ep_status;
+ 
+     status = ucp_ep_create(ucp_worker, &ep_params, &client_ep);
++    free(peer_addr);
+     /* If peer failure testing was requested, it could be possible that UCP EP
+      * couldn't be created; in this case set `ret = 0` to report success */
+     ret = (err_handling_opt.failure_mode != FAILURE_MODE_NONE) ? 0 : -1;

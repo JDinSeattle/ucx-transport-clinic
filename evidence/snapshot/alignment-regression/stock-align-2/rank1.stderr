@@ -1,0 +1,596 @@
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1241:9: runtime error: store to misaligned address 0x59e9ba7e72a1 for type 'uint64_t' (aka 'unsigned long'), which requires 8 byte alignment
+0x59e9ba7e72a1: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1241:9 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1336:13: runtime error: store to misaligned address 0x59e9ba7e72ab for type 'uint16_t' (aka 'unsigned short'), which requires 2 byte alignment
+0x59e9ba7e72ab: note: pointer points here
+ 6d  9f 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1336:13 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/sm/self/self.c:140:5: runtime error: store to misaligned address 0x59e9ba7e72be for type 'uct_self_iface_addr_t' (aka 'unsigned long'), which requires 8 byte alignment
+0x59e9ba7e72be: note: pointer points here
+ 4f 03 00 08 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/sm/self/self.c:140:5 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1167:12: runtime error: load of misaligned address 0x59e9ba7e7301 for type 'uint64_t' (aka 'unsigned long'), which requires 8 byte alignment
+0x59e9ba7e7301: note: pointer points here
+ 00 00 00  20 c8 76 55 5a 94 a5 5f  2e 00 00 63 75 77 cc 2b  32 00 40 97 50 00 00 00  00 00 4f 03 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1167:12 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1792:37: runtime error: load of misaligned address 0x59e9ba7e730b for type 'uint16_t' (aka 'unsigned short'), which requires 2 byte alignment
+0x59e9ba7e730b: note: pointer points here
+ 5f  2e 00 00 63 75 77 cc 2b  32 00 40 97 50 00 00 00  00 00 4f 03 00 88 2b b1  f1 85 3e b7 15 bc 01
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/wireup/address.c:1792:37 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/sm/self/self.c:162:22: runtime error: load of misaligned address 0x59e9ba7e731e for type 'const uct_self_iface_addr_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba7e731e: note: pointer points here
+ 4f 03 00 88 2b b1  f1 85 3e b7 15 bc 01 0e  01 02 91 51 b9 4b ec 5f  74 d7 f9 ff ff ef cf 19  17 b7
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/sm/self/self.c:162:22 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:283:52: runtime error: member access within misaligned address 0x59e9ba809ff1 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809ff1: note: pointer points here
+ 6e 78 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:283:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:891:40: runtime error: member access within misaligned address 0x59e9ba80a411 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x59e9ba80a411: note: pointer points here
+ e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:891:40 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:891:40: runtime error: load of misaligned address 0x59e9ba80a411 for type 'const ucp_proto_t *const' (aka 'const struct ucp_proto *const'), which requires 8 byte alignment
+0x59e9ba80a411: note: pointer points here
+ e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:891:40 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:892:40: runtime error: member access within misaligned address 0x59e9ba80a411 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x59e9ba80a411: note: pointer points here
+ e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:892:40 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:892:40: runtime error: load of misaligned address 0x59e9ba80a419 for type 'const void *const', which requires 8 byte alignment
+0x59e9ba80a419: note: pointer points here
+ 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00 e9 59 00  00 c0 72 80 ba
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:892:40 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:894:41: runtime error: member access within misaligned address 0x59e9ba80a411 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x59e9ba80a411: note: pointer points here
+ e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:894:41 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:895:27: runtime error: member access within misaligned address 0x59e9ba80a411 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x59e9ba80a411: note: pointer points here
+ e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:895:27 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:895:27: runtime error: load of misaligned address 0x59e9ba80a421 for type 'const ucp_worker_cfg_index_t' (aka 'const unsigned short'), which requires 8 byte alignment
+0x59e9ba80a421: note: pointer points here
+ e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00 e9 59 00  00 c0 72 80 ba e9 59 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:895:27 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:900:19: runtime error: member access within misaligned address 0x59e9ba80a411 for type 'const ucp_proto_config_t', which requires 8 byte alignment
+0x59e9ba80a411: note: pointer points here
+ e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:900:19 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:900:19: runtime error: load of misaligned address 0x59e9ba80a411 for type 'const ucp_proto_t *const' (aka 'const struct ucp_proto *const'), which requires 8 byte alignment
+0x59e9ba80a411: note: pointer points here
+ e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00 0a 00 00  00 ff 01 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/proto/proto_select.c:900:19 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:286:27: runtime error: member access within misaligned address 0x59e9ba809ff1 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809ff1: note: pointer points here
+ 6e 78 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:286:27 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:286:27: runtime error: load of misaligned address 0x59e9ba80a409 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x59e9ba80a409: note: pointer points here
+ 00 00 00  00 00 00 7e ba e9 59 00  00 88 75 61 df 6e 78 00  00 50 13 80 ba e9 59 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:286:27 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:647:52: runtime error: member access within misaligned address 0x59e9ba80d0ff for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d0ff: note: pointer points here
+ ff ff 06 ff 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:647:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:652:28: runtime error: member access within misaligned address 0x59e9ba80d0ff for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d0ff: note: pointer points here
+ ff ff 06 ff 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:652:28 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:652:28: runtime error: load of misaligned address 0x59e9ba80d517 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x59e9ba80d517: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 40  bb 64 df 6e 78 00 00 50  9b 80 ba e9 59 00 00 00  00 ff ff
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:652:28 
+#
+# UCP endpoint 
+#
+#               peer: <no debug data>
+#                 lane[0]:  1:tcp/lo.0 md[1]                -> md[1]/tcp/sysdev[255] seg 4294967295 am keepalive wireup
+#
+# +------------+--------------------------------------------+--------+
+# | ucp_context_0 intra-node cfg#0                                   |
+# | tagged message by ucp_tag_send* from host memory                 |
+# +------------+--------------------------------------------+--------+
+# |   Range    |                Description                 | Config |
+# +------------+--------------------------------------------+--------+
+# |          0 | (?) rendezvous no data fetch               |        |
+# |   1..16352 | (?) rendezvous zero-copy                   | tcp/lo |
+# | 16353..inf | (?) rendezvous fragmented copy-in copy-out | tcp/lo |
+# +------------+--------------------------------------------+--------+
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:254:12: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:254:12 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:254:12: runtime error: store to misaligned address 0x59e9ba80f47c for type 'void *', which requires 8 byte alignment
+0x59e9ba80f47c: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:254:12 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:255:12: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:255:12 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:255:12: runtime error: store to misaligned address 0x59e9ba80f484 for type 'unsigned int', which requires 8 byte alignment
+0x59e9ba80f484: note: pointer points here
+  e9 59 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:255:12 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:262:28: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:262:28 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:262:28: runtime error: load of misaligned address 0x59e9ba80f484 for type 'unsigned int', which requires 8 byte alignment
+0x59e9ba80f484: note: pointer points here
+  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:262:28 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:263:46: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:263:46 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:263:46: runtime error: load of misaligned address 0x59e9ba80f47c for type 'void *', which requires 8 byte alignment
+0x59e9ba80f47c: note: pointer points here
+  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:263:46 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:270:12: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:270:12 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:270:12: runtime error: store to misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t *' (aka 'struct ucs_mpool_chunk *'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:270:12 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:296:29: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:296:29 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:296:29: runtime error: load of misaligned address 0x59e9ba80f484 for type 'unsigned int', which requires 8 byte alignment
+0x59e9ba80f484: note: pointer points here
+  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:296:29 
+{"event":"request_owned","rank":1,"time_ns":35629573426732,"status":"Operation in progress"}
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/tcp/tcp_cm.c:704:16: runtime error: load of misaligned address 0x786edcddd205 for type 'uct_tcp_cm_conn_event_t' (aka 'enum uct_tcp_cm_conn_event'), which requires 4 byte alignment
+0x786edcddd205: note: pointer points here
+ 1d 00 00 00 01 00 00  00 00 00 00 00 00 00 00  00 00 02 00 a2 bd 7f 00  00 01 00 00 00 00 00 00  00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/tcp/tcp_cm.c:704:16 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/tcp/tcp_cm.c:242:9: runtime error: store to misaligned address 0x7ffea0aef4e5 for type 'uct_tcp_cm_conn_event_t' (aka 'enum uct_tcp_cm_conn_event'), which requires 4 byte alignment
+0x7ffea0aef4e5: note: pointer points here
+ 04 00 00 00 78 00 00  84 aa b0 de 6e 78 00 00  c0 08 00 d8 6e 78 00 00  d0 08 00 d8 00 00 00 00  ca
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/uct/tcp/tcp_cm.c:242:9 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/core/ucp_rkey.c:947:26: runtime error: load of misaligned address 0x786edcddd22e for type 'const ucp_md_map_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x786edcddd22e: note: pointer points here
+ 00 00 00 00 00 00  00 00 00 00 00 00 00 38  53 9e 3e 4b d7 e0 37 37  01 13 23 00 01 82 a2 bd  87 80
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/core/ucp_rkey.c:947:26 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:206:51: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:206:51 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:206:51: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:206:51 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:206:57: runtime error: load of misaligned address 0x59e9ba809b51 for type 'const ucp_md_map_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:206:57 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:84:31: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:84:31 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:84:31: runtime error: load of misaligned address 0x59e9ba809fe1 for type 'const uct_pack_callback_t' (aka 'unsigned long (*const)(void *, void *)'), which requires 8 byte alignment
+0x59e9ba809fe1: note: pointer points here
+ 00 00 00  00 60 78 20 df 6e 78 00  00 f0 8d 20 df 6e 78 00  00 00 00 00 00 00 00 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:84:31 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:59:48: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:59:48 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:59:48: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:59:48 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:59:54: runtime error: load of misaligned address 0x59e9ba809f61 for type 'const size_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba809f61: note: pointer points here
+ 00 00 00  00 09 00 00 00 00 00 00  00 00 00 7e ba e9 59 00  00 10 75 61 df 6e 78 00  00 e0 12 80 ba
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:59:54 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:89:52: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:89:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:89:52: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:89:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:89:58: runtime error: load of misaligned address 0x59e9ba809f69 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x59e9ba809f69: note: pointer points here
+ 00 00 00  00 00 00 7e ba e9 59 00  00 10 75 61 df 6e 78 00  00 e0 12 80 ba e9 59 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:89:58 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:151:57: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:151:57 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:151:57: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:151:57 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:151:63: runtime error: load of misaligned address 0x59e9ba809b51 for type 'const ucp_md_map_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:151:63 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:152:52: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:152:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:152:52: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:152:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:152:58: runtime error: load of misaligned address 0x59e9ba809b59 for type 'const ucp_sys_dev_map_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba809b59: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00 00 00 00  00 00 73 64 2f
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:152:58 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:153:52: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:153:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:153:52: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:153:52 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:157:5: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:157:5 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:157:5: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:157:5 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:157:5: runtime error: load of misaligned address 0x59e9ba809f61 for type 'const size_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba809f61: note: pointer points here
+ 00 00 00  00 09 00 00 00 00 00 00  00 00 00 7e ba e9 59 00  00 10 75 61 df 6e 78 00  00 e0 12 80 ba
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:157:5 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:93:64: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:93:64 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:93:64: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:93:64 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:93:70: runtime error: load of misaligned address 0x59e9ba809f69 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x59e9ba809f69: note: pointer points here
+ 00 00 00  00 00 00 7e ba e9 59 00  00 10 75 61 df 6e 78 00  00 e0 12 80 ba e9 59 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:93:70 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:622:16: runtime error: member access within misaligned address 0x59e9ba809b51 for type 'const ucp_proto_rndv_rtr_priv_t', which requires 8 byte alignment
+0x59e9ba809b51: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df 6e 78 00  00 c8 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:622:16 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:622:16: runtime error: load of misaligned address 0x59e9ba809fe9 for type 'const ucp_proto_rndv_rtr_data_received_cb_t' (aka 'void (*const)(struct ucp_request *, int)'), which requires 8 byte alignment
+0x59e9ba809fe9: note: pointer points here
+ 6e 78 00  00 f0 8d 20 df 6e 78 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 4f 61 42 df
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/rndv_rtr.c:622:16 
+{"event":"request_complete","rank":1,"time_ns":35629580316602,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629580319979,"status":"Success"}
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:137:56: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:137:56 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:137:56: runtime error: load of misaligned address 0x59e9ba80d99f for type 'const size_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba80d99f: note: pointer points here
+ fe 7f 00 00 09  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 d0  e5 63 df 6e 78 00 00 51  9b 80 ba
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:137:56 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:195:60: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:195:60 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:195:60: runtime error: load of misaligned address 0x59e9ba80d9a7 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x59e9ba80d9a7: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 d0  e5 63 df 6e 78 00 00 51  9b 80 ba e9 59 00 00 00  00 ff ff
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:195:60 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:202:47: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:202:47 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:202:47: runtime error: load of misaligned address 0x59e9ba80d58f for type 'const ucp_md_map_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:202:47 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:145:14: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:145:14 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:145:14: runtime error: load of misaligned address 0x59e9ba80d9a7 for type 'const ucp_lane_index_t' (aka 'const unsigned char'), which requires 8 byte alignment
+0x59e9ba80d9a7: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 d0  e5 63 df 6e 78 00 00 51  9b 80 ba e9 59 00 00 00  00 ff ff
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/tag/tag_rndv.c:145:14 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24: runtime error: load of misaligned address 0x59e9ba80d58f for type 'const ucp_md_map_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24: runtime error: load of misaligned address 0x59e9ba80d597 for type 'const ucp_sys_dev_map_t' (aka 'const unsigned long'), which requires 8 byte alignment
+0x59e9ba80d597: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00 00 00 00 00 a8  df ef de
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.inl:290:24 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/core/ucp_rkey.c:210:5: runtime error: store to misaligned address 0x7ffea0aef7f9 for type 'ucp_md_map_t' (aka 'unsigned long'), which requires 8 byte alignment
+0x7ffea0aef7f9: note: pointer points here
+ 00 00 00  00 f8 ae a0 fe 7f 00 00  00 00 00 00 00 00 00 00  bf 6d 33 df 6e 78 00 00  00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/core/ucp_rkey.c:210:5 
+{"event":"request_owned","rank":1,"time_ns":35629581841755,"status":"Operation in progress"}
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:1142:27: runtime error: member access within misaligned address 0x59e9ba80d58f for type 'const ucp_proto_rndv_ctrl_priv_t', which requires 8 byte alignment
+0x59e9ba80d58f: note: pointer points here
+ 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 90  22 71 df 6e 78 00 00 48  02 00 00
+             ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucp/rndv/proto_rndv.c:1142:27 
+{"event":"request_complete","rank":1,"time_ns":35629585209057,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629585216951,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629586074940,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629588037881,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629588040916,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629588049415,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629588640985,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629588642362,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629589487553,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629590927437,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629590929792,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629590935824,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629591533179,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629591536532,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629592501518,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629593709206,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629593711591,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629593719328,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629594212337,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629594213840,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629595078572,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629595569273,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629595570170,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629595575665,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629596065875,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629596068250,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629596878313,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629597512527,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629597518797,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629597525492,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629598022118,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629598023785,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629598845396,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629599329860,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629599332531,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629599339172,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629599806759,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629599807612,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629600772496,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629601243031,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629601245479,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629601251418,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629601711078,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629601711833,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629602680146,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629603166200,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629603170045,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629603178519,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629603682386,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629603683866,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629604513881,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629604983920,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629604985043,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629604990726,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629605444365,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629605446587,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629606271038,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629606740124,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629606741230,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629606746564,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629607205606,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629607207421,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629608030456,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629608491548,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629608492462,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629608497601,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629608932609,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629608933493,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629609779638,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629610364715,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629610366937,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629610372578,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629610847777,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629610848457,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629611687158,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629612833063,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629612836060,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629612841768,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629613289658,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629613290680,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629614107829,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629614642010,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629614643686,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629614649775,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629615139741,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629615143784,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629615964861,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629616469107,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629616472014,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629616477382,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629616929861,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629616930564,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629617758768,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629618234174,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629618235790,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629618240496,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629618709259,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629618710276,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629619527565,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629619986979,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629619987720,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629619992214,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629620448514,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629620450350,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629621273063,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629621764515,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629621765360,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629621770380,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629622224505,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629622226244,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629623043878,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629623499759,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629623500561,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629623504833,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629623944891,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629623945767,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629624784359,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629625367600,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629625369845,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629625376083,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629625881134,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629625882243,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629626692384,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629627171644,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629627173204,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629627178654,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629627614012,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629627614690,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629628433414,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629628867291,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629628868044,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629628872126,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629629317218,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629629318565,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629630150355,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629630626304,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629630627812,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629630634365,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629631094917,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629631097632,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629631919310,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629632382913,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629632384626,"status":"Success"}
+{"event":"request_owned","rank":1,"time_ns":35629632389276,"status":"Operation in progress"}
+{"event":"request_complete","rank":1,"time_ns":35629632815748,"status":"Success"}
+{"event":"request_freed","rank":1,"time_ns":35629632816235,"status":"Success"}
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:30:28: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:30:28 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:30:28: runtime error: load of misaligned address 0x59e9ba80f484 for type 'unsigned int', which requires 8 byte alignment
+0x59e9ba80f484: note: pointer points here
+  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:30:28 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:31:47: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:31:47 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:31:47: runtime error: load of misaligned address 0x59e9ba80f47c for type 'void *', which requires 8 byte alignment
+0x59e9ba80f47c: note: pointer points here
+  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:31:47 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:162:66: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:162:66 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:162:66: runtime error: load of misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t *' (aka 'struct ucs_mpool_chunk *'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:162:66 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:176:29: runtime error: member access within misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t' (aka 'struct ucs_mpool_chunk'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:176:29 
+/tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:176:29: runtime error: load of misaligned address 0x59e9ba80f474 for type 'ucs_mpool_chunk_t *' (aka 'struct ucs_mpool_chunk *'), which requires 8 byte alignment
+0x59e9ba80f474: note: pointer points here
+  00 00 00 00 00 00 00 00  00 00 00 00 b8 f4 80 ba  e9 59 00 00 80 00 00 00  00 00 00 00 00 00 00 00
+              ^ 
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /tmp/ucx-clinic-38becbb6c7/stock-align-src/src/ucs/datastruct/mpool.c:176:29 

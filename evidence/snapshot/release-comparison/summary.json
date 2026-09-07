@@ -1,0 +1,70 @@
+{
+  "pass": true,
+  "comparisons": [
+    {
+      "bytes": 64,
+      "paired_p50_ratios_patched_over_stock": [
+        1.1417754247722236,
+        0.4868294421671716,
+        0.4995745625393067,
+        0.879739336492891,
+        0.9886983931729069,
+        1.0257805108798486,
+        1.0122359909593952
+      ],
+      "median_ratio": 0.9886983931729069,
+      "bootstrap_median_95pct_ci": [
+        0.4995745625393067,
+        1.0257805108798486
+      ],
+      "assessment": "no_resolved_over_10pct_regression",
+      "uncertain_over_10pct": false
+    },
+    {
+      "bytes": 4096,
+      "paired_p50_ratios_patched_over_stock": [
+        1.4578270404836702,
+        1.3775680840898232,
+        0.9142649426182686,
+        1.5845779327587342,
+        1.2131870984489583,
+        1.0421683404538644,
+        1.0046760534109211
+      ],
+      "median_ratio": 1.2131870984489583,
+      "bootstrap_median_95pct_ci": [
+        1.0046760534109211,
+        1.4578270404836702
+      ],
+      "assessment": "no_resolved_over_10pct_regression",
+      "uncertain_over_10pct": true
+    },
+    {
+      "bytes": 1048576,
+      "paired_p50_ratios_patched_over_stock": [
+        0.7147152853402067,
+        1.3662897059234982,
+        1.0037117189454956,
+        0.7501809113806891,
+        1.1287033270465836,
+        0.961538738482966,
+        1.0068659712368966
+      ],
+      "median_ratio": 1.0037117189454956,
+      "bootstrap_median_95pct_ci": [
+        0.7501809113806891,
+        1.1287033270465836
+      ],
+      "assessment": "no_resolved_over_10pct_regression",
+      "uncertain_over_10pct": true
+    }
+  ],
+  "cpus": [
+    2,
+    4
+  ],
+  "iterations": 200,
+  "repeats": 7,
+  "timing": "application ping-pong round trip; not one-way wire latency; no sanitizer; trace disabled",
+  "limitation": "loopback, shared workstation and small repeat count; intervals describe these trials only"
+}

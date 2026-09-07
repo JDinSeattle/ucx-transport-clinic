@@ -1,0 +1,115 @@
+#
+# UCP endpoint 
+#
+#               peer: <no debug data>
+#                 lane[0]:  1:tcp/lo.0 md[1]                -> md[1]/tcp/sysdev[255] seg 4294967295 am keepalive wireup
+#
+# +--------------+--------------------------------------------+--------+
+# | ucp_context_0 intra-node cfg#0                                     |
+# | tagged message by ucp_tag_send*(fast-completion) from host memory  |
+# +--------------+--------------------------------------------+--------+
+# |    Range     |                Description                 | Config |
+# +--------------+--------------------------------------------+--------+
+# |      0..8184 | eager short                                | tcp/lo |
+# | 8185..262143 | multi-frag eager copy-in copy-out          | tcp/lo |
+# |    256K..inf | (?) rendezvous fragmented copy-in copy-out | tcp/lo |
+# +--------------+--------------------------------------------+--------+
+# +-----------+--------------------------------------------+--------+
+# | ucp_context_0 intra-node cfg#0                                  |
+# | tagged message by ucp_tag_send*(multi) from host memory         |
+# +-----------+--------------------------------------------+--------+
+# |   Range   |                Description                 | Config |
+# +-----------+--------------------------------------------+--------+
+# |    0..626 | eager short                                | tcp/lo |
+# | 627..1862 | multi-frag eager copy-in copy-out          | tcp/lo |
+# | 1863..inf | (?) rendezvous fragmented copy-in copy-out | tcp/lo |
+# +-----------+--------------------------------------------+--------+
+# +---------------+--------------------------------------------+--------+
+# | ucp_context_0 intra-node cfg#0                                      |
+# | tagged message by ucp_tag_send* from host memory                    |
+# +---------------+--------------------------------------------+--------+
+# |     Range     |                Description                 | Config |
+# +---------------+--------------------------------------------+--------+
+# |             0 | eager short                                | tcp/lo |
+# |      1..16483 | eager zero-copy copy-out                   | tcp/lo |
+# | 16484..273826 | multi-frag eager copy-in copy-out          | tcp/lo |
+# |   273827..inf | (?) rendezvous fragmented copy-in copy-out | tcp/lo |
+# +---------------+--------------------------------------------+--------+
+{"event":"request_owned","rank":0,"time_ns":35884603208069,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604159307,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604168384,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604172080,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604213858,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604214854,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604225347,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604229259,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604230181,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604235959,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604243763,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604244689,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604251231,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604257519,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604258405,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604263628,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604271112,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604271972,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604277297,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604285038,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604291186,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604305859,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604314472,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604315464,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604321062,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604327381,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604328323,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604334992,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604342766,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604343692,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604351511,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604357467,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604358395,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604364043,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604374165,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604375098,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604383918,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604390456,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604391361,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604396923,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604405946,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604406887,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604412630,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604420393,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604421315,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604429503,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604433389,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604434535,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604440407,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604447756,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604448707,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604455563,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604464629,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604465577,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604472313,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604477536,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604478455,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604483811,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604491228,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604492177,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604498997,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604505384,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604506459,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604512087,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604519793,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604520851,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604526511,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604535430,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604536378,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604545810,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604552303,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604553254,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604558701,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604567105,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604568057,"status":"Success"}
+{"event":"request_owned","rank":0,"time_ns":35884604574794,"status":"Operation in progress"}
+{"event":"request_complete","rank":0,"time_ns":35884604583451,"status":"Success"}
+{"event":"request_freed","rank":0,"time_ns":35884604584601,"status":"Success"}

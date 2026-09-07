@@ -1,0 +1,12 @@
+{
+  "variant": "patched-asan",
+  "returncodes": [
+    0,
+    0
+  ],
+  "success_marker": true,
+  "timed_out": false,
+  "scope_reports": [],
+  "other_reports": [],
+  "pass": true
+}
