@@ -23,6 +23,6 @@ The integration results precede the new internal-unit target. They must not be u
 
 ## Security-trigger context
 
-No visible tool response in this session reports a cybersecurity-policy rejection or provides a classifier reason. The observed permission barriers were the restricted environment's network/GPU visibility; the requested escalations were allowed.
+At the time this UCX investigation was paused, no visible tool response provided the reason for an earlier security-related UI label. The observed runtime permission barriers concerned restricted network/GPU visibility. A later attempt to create a public project repository was explicitly rejected because public visibility and public release of the evidence had not been authorized; private repository preservation was used instead.
 
 Alignment sanitizer findings, memory-lifetime patches, and controlled peer termination are security-adjacent diagnostic operations and could explain a security-related UI label. That is an inference, not a confirmed trigger. The experiments used local UCX/TCP processes and the already-public upstream report; they did not target external services.
