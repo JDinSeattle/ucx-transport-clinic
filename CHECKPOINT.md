@@ -26,3 +26,7 @@ The integration results precede the new internal-unit target. They must not be u
 At the time this UCX investigation was paused, no visible tool response provided the reason for an earlier security-related UI label. The observed runtime permission barriers concerned restricted network/GPU visibility. A later attempt to create a public project repository was explicitly rejected because public visibility and public release of the evidence had not been authorized; private repository preservation was used instead.
 
 Alignment sanitizer findings, memory-lifetime patches, and controlled peer termination are security-adjacent diagnostic operations and could explain a security-related UI label. That is an inference, not a confirmed trigger. The experiments used local UCX/TCP processes and the already-public upstream report; they did not target external services.
+
+## Maintenance review — 2026-09-07
+
+Public visibility was explicitly authorized in the current request. Publication does not resume this investigation or qualify its candidate patches. Code, patches and tests remain unchanged in this maintenance pass; only documentation and evidence-bank status are maintained. The [official hiring/release review](docs/MARKET_REVIEW_2026-09-07.md) records why an automatic UCX upgrade is not appropriate for a paused, revision-specific experiment. Existing integration and sanitizer results are historical; the current full build remains known failing and was not rerun.

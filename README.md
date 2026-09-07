@@ -34,3 +34,7 @@ The full alignment logs contain **other UCX alignment reports outside the candid
 - `evidence/local/`: complete local logs, retained but excluded from Git by default.
 
 Reference: [upstream issue #11806](https://github.com/openucx/ucx/issues/11806). The issue author's original findings and contribution intent are credited; these local experiments are independent validation.
+
+## September maintenance
+
+[Hiring/ecosystem review](docs/MARKET_REVIEW_2026-09-07.md) and checkpoint metadata were updated while retaining the pause. This public repository is an unfinished diagnostic study; no upstream acceptance or complete build claim is made.
